@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82bafe98-8ef7-42e6-a77c-d6f4333ffab5" name="Default" comment="v0.7.6&#10;&#10;1.数据访问层已经完成,测试已经通过&#10;2.domain设计完成&#10;3.业务逻辑层已经完成&#10;4.表现层还未设计">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/dp/dao/impl/CustomerDaoJdbcImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cn/dp/dao/impl/CustomerDaoJdbcImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user-management-system.iml" afterPath="$PROJECT_DIR$/user-management-system.iml" />
+    <list default="true" id="82bafe98-8ef7-42e6-a77c-d6f4333ffab5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/dp/utils/JdbcUtil.java" afterPath="$PROJECT_DIR$/src/main/java/cn/dp/utils/JdbcUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="user-management-system.iws" />
@@ -29,11 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JdbcUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerDaoJdbcImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/dp/dao/impl/CustomerDaoJdbcImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6386555">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+                <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+                <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+                <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+                <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/dp/utils/JdbcUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71575344">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -83,11 +98,11 @@
         <option value="$PROJECT_DIR$/src/main/test/cn/dp/dao/impl/CustomerDaoJdbcImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/dp/dao/impl/CustomerDaoJdbcImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/dp/domain/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/dp/utils/JdbcUtil.java" />
         <option value="$PROJECT_DIR$/.idea/encodings.xml" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/dp/utils/JdbcUtil.java" />
       </list>
     </option>
   </component>
@@ -1032,7 +1047,7 @@
       <workItem from="1446448320407" duration="19000" />
       <workItem from="1446448531103" duration="120000" />
       <workItem from="1446448652123" duration="299000" />
-      <workItem from="1446448952223" duration="150000" />
+      <workItem from="1446448952223" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="v0.6&#10;1.数据访问层的impl还未完成(1/5)&#10;2.domain设计完成&#10;3.业务逻辑层已经完成&#10;4.表现层还未设计&#10;">
       <created>1446393477140</created>
@@ -1058,11 +1073,17 @@
       <option name="project" value="LOCAL" />
       <updated>1446448589689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v0.7.6&#10;&#10;1.数据访问层已经完成,测试已经通过&#10;2.domain设计完成&#10;3.业务逻辑层已经完成&#10;4.表现层还未设计">
+      <created>1446449108710</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1446449108710</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16729000" />
+    <option name="totallyTimeSpent" value="16891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1075,7 +1096,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1085,7 +1106,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80750406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5637255" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3137255" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24886535" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -1095,13 +1117,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44607842" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44607842" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3137255" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1142,11 +1163,11 @@
           <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
           </folding>
         </state>
       </provider>
@@ -1173,11 +1194,11 @@
           <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
           </folding>
         </state>
       </provider>
@@ -1196,11 +1217,11 @@
           <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
           </folding>
         </state>
       </provider>
@@ -1219,11 +1240,11 @@
           <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
           </folding>
         </state>
       </provider>
@@ -1242,11 +1263,11 @@
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
           </folding>
         </state>
       </provider>
@@ -1273,11 +1294,11 @@
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
           </folding>
         </state>
       </provider>
@@ -1304,11 +1325,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
           </folding>
         </state>
       </provider>
@@ -1502,21 +1523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/dp/dao/impl/CustomerDaoJdbcImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="INSERT into ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT *FROM..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..customers..." />
-            <marker date="1446448898629" expanded="true" signature="-1:-1" placeholder="UPDATE custo..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.6027398">
@@ -1535,9 +1541,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/dp/utils/JdbcUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71575344">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/dp/dao/impl/CustomerDaoJdbcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6386555">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1446448898629" expanded="true" signature="484:592" placeholder="INSERT into ..." />
+            <marker date="1446448898629" expanded="true" signature="1452:1484" placeholder="DELETE from ..." />
+            <marker date="1446448898629" expanded="true" signature="1948:1981" placeholder="SELECT *FROM..customers..." />
+            <marker date="1446448898629" expanded="true" signature="3079:3102" placeholder="SELECT * FRO..customers..." />
+            <marker date="1446448898629" expanded="true" signature="4220:4327" placeholder="UPDATE custo..." />
+          </folding>
         </state>
       </provider>
     </entry>

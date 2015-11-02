@@ -20,8 +20,6 @@ public class JdbcUtil {
             password = prop.getProperty("password");
             driveClass = prop.getProperty("driveClass");
             Class.forName(driveClass);
-            driveClass = prop.getProperty("driveClass");
-            Class.forName(driveClass);
         } catch (Exception e) {
             throw new ExceptionInInitializerError();
         }
