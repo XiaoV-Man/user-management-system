@@ -20,7 +20,7 @@ public class BussinessServiceImpl implements BussinessService {
     }
 
     public void updateCustomer(Customer customer) throws IdIsNullException {
-        if (customer.getID() == null) {
+        if (customer.getId() == null) {
             throw new IdIsNullException();
         }
         cd.update(customer);

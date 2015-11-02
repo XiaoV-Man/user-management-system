@@ -11,6 +11,8 @@
     <title></title>
 </head>
 <body>
-
+<jsp:forward page="${pageContext.request.contextPath}/servlet/controller">
+    <jsp:param name="op" value="showAllCustomers"></jsp:param>
+</jsp:forward>
 </body>
 </html>

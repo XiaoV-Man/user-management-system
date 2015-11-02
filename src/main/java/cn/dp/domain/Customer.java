@@ -17,15 +17,15 @@ create table customers(
 );
  */
 public class Customer {
-    private Integer ID;
+    private Integer id;
     private String name;
     private String gender;
     private Date birthday;
     private String cellphone;
     private String email;
-    private String type;
-    private String  description;
     private String hobby;
+    private String type;
+    private String description;
 
     public String getHobby() {
         return hobby;
@@ -37,7 +37,7 @@ public class Customer {
 
     public String toString() {
         return "Customer{" +
-                "ID=" + ID +
+                "ID=" + id +
                 ", name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
                 ", birthday=" + birthday +
@@ -49,12 +49,12 @@ public class Customer {
                 '}';
     }
 
-    public Integer getID() {
-        return ID;
+    public Integer getId() {
+        return id;
     }
 
-    public void setID(Integer ID) {
-        this.ID = ID;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {

@@ -5,4 +5,12 @@
          version="3.1"
          metadata-complete="true">
   <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>cn.dp.web.controller.Controller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/servlet/controller</url-pattern>
+    </servlet-mapping>
 </web-app>

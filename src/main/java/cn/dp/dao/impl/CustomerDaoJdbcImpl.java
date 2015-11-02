@@ -63,7 +63,7 @@ public class CustomerDaoJdbcImpl implements CustomerDao {
             rs = ps.executeQuery();
             if (rs.next()) {
                 Customer c = new Customer();
-                c.setID(rs.getInt("id"));
+                c.setId(rs.getInt("id"));
                 c.setName(rs.getString("name"));
                 c.setGender(rs.getString("gender"));
                 c.setCellphone(rs.getString("cellphone"));
@@ -95,7 +95,7 @@ public class CustomerDaoJdbcImpl implements CustomerDao {
             List<Customer> list = new ArrayList<Customer>();
             while (rs.next()) {
                 Customer c = new Customer();
-                c.setID(rs.getInt("id"));
+                c.setId(rs.getInt("id"));
                 c.setName(rs.getString("name"));
                 c.setGender(rs.getString("gender"));
                 c.setCellphone(rs.getString("cellphone"));
@@ -130,7 +130,7 @@ public class CustomerDaoJdbcImpl implements CustomerDao {
             ps.setString(6,customer.getHobby());
             ps.setString(7,customer.getType());
             ps.setString(8,customer.getDescription());
-            ps.setInt(9,customer.getID());
+            ps.setInt(9,customer.getId());
             ps.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException();

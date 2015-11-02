@@ -15,7 +15,7 @@ public class CustomerDaoJdbcImplTest {
     @Before
     public void setUp() throws Exception {
         c = new Customer();
-        c.setID(1);
+        c.setId(1);
         c.setName("fuckubitch");
         c.setDescription("caoniam");
         c.setType("nidie");
