@@ -8,18 +8,20 @@ public class JdbcUtil {
     private static String url;
     private static String user;
     private static String password;
-    private static String driverClass;
+    private static String driveClass;
 
     static {
-        InputStream in = JdbcUtil.class.getResourceAsStream("dbcfg.properties");
+        InputStream in = JdbcUtil.class.getClassLoader().getResourceAsStream("dbcfg.properties");
         Properties prop = new Properties();
         try {
             prop.load(in);
             url = prop.getProperty("url");
             user = prop.getProperty("user");
             password = prop.getProperty("password");
-            driverClass = prop.getProperty("driverClass");
-            Class.forName(driverClass);
+            driveClass = prop.getProperty("driveClass");
+            Class.forName(driveClass);
+            driveClass = prop.getProperty("driveClass");
+            Class.forName(driveClass);
         } catch (Exception e) {
             throw new ExceptionInInitializerError();
         }

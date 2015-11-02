@@ -32,6 +32,7 @@ public class CustomerDaoJdbcImpl implements CustomerDao {
         } finally {
             JdbcUtil.release(conn, ps, rs);
         }
+
     }
 
     public void delete(Integer id) {

@@ -26,8 +26,6 @@ public class Customer {
     private String hobby;
     private String type;
     private String description;
-
-    @Override
     public String toString() {
         return "Customer{" +
                 "ID=" + ID +
