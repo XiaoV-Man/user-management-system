@@ -22,10 +22,6 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-<<<<<<< HEAD
-=======
-        <module name="user-management-system" />
->>>>>>> origin/master
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
