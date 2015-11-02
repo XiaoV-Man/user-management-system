@@ -7,7 +7,6 @@ import cn.dp.utils.JdbcUtil;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
 public class CustomerDaoJdbcImpl implements CustomerDao {
 
     public void save(Customer customer) {
