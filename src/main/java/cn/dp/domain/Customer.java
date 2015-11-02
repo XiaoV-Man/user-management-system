@@ -23,9 +23,9 @@ public class Customer {
     private Date birthday;
     private String cellphone;
     private String email;
-    private String hobby;
     private String type;
-    private String description;
+    private String  description;
+
     public String toString() {
         return "Customer{" +
                 "ID=" + ID +
@@ -34,18 +34,9 @@ public class Customer {
                 ", birthday=" + birthday +
                 ", cellphone='" + cellphone + '\'' +
                 ", email='" + email + '\'' +
-                ", hobby=" + hobby +
                 ", type='" + type + '\'' +
-                ", description='" + description + '\'' +
+                ", description=" + description +
                 '}';
-    }
-
-    public String getHobby() {
-        return hobby;
-    }
-
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
     }
 
     public Integer getID() {
