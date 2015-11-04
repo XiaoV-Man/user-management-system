@@ -5,9 +5,6 @@ import cn.dp.exception.IdIsNullException;
 
 import java.util.List;
 
-/**
- * Created by pu on 2015/11/1 0001.
- */
 public interface BussinessService {
     /**
      * 增加一个客户信息

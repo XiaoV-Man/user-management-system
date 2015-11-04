@@ -13,11 +13,13 @@
 </head>
 <body>
 <h1>客户信息列表</h1>
+
+<form action="${pageContext.request.contextPath}/servlet/controller?op=delMulti" method="post">
     <table width="88%">
         <tr>
             <td>
                 <a href="${pageContext.request.contextPath}/addCustomers.jsp">添加</a>
-                <a href="">删除</a>
+                <a href="javascript:delMulti()">删除</a>
             </td>
         </tr>
         <tr>
@@ -51,8 +53,8 @@
                                 <td>${c.type}</td>
                                 <td>${c.description}</td>
                                 <td>
-                                    <a href="">修改</a>
-                                    <a href="">删除</a>
+                                    <a href="${pageContext.request.contextPath}/servlet/controller?op=editUI&id=${c.id}">修改</a>
+                                    <a href="javascript:delone(${c.id})">删除</a>
                                 </td>
                             </tr>
 
@@ -62,5 +64,33 @@
             </td>
         </tr>
     </table>
+</form>
 </body>
+<script type="text/javascript">
+    function delone(customerId) {
+        var flag = window.confirm("确定删除吗?")
+        if (flag) {
+            window.location.href = "${pageContext.request.contextPath}/servlet/controller?op=delOne&id=" + customerId;
+        }
+    }
+    function delMulti() {
+        var selected = false;
+        var idsObj = document.getElementsByName("ids")
+        for(var i = 0;i<idsObj.length;i++){
+            if(idsObj[i].checked){
+                selected=true;
+                break;
+            }
+        }
+        if(!selected){
+            alert("请选择要删除的记录");
+            return;
+        }else{
+            var flag = window.confirm("确定删除吗?");
+            if(flag){
+                document.forms[0].submit();
+            }
+        }
+    }
+</script>
 </html>
