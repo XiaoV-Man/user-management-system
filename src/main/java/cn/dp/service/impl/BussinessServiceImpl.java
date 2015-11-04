@@ -1,5 +1,6 @@
 package cn.dp.service.impl;
 
+import cn.dp.common.Page;
 import cn.dp.dao.CustomerDao;
 import cn.dp.dao.impl.CustomerDaoJdbcImpl;
 import cn.dp.domain.Customer;
@@ -32,5 +33,15 @@ public class BussinessServiceImpl implements BussinessService {
 
     public Customer findCustomerById(Integer id) {
         return cd.findOne(id);
+    }
+
+    public Page findPage(String num) {
+        Integer pageNum = 1;
+        if (num != null && !num.equals("")) {
+            pageNum = Integer.parseInt(num);
+        }
+        Page page = new Page(cd.getTotalRecords(),pageNum);
+        page.setRecords(cd.findPageRecords(page.getStartIndex(), page.getPageSize()));
+        return page;
     }
 }

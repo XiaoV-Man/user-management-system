@@ -1,5 +1,6 @@
 package cn.dp.web.controller;
 
+import cn.dp.common.Page;
 import cn.dp.domain.Customer;
 import cn.dp.exception.IdIsNullException;
 import cn.dp.service.BussinessService;
@@ -16,7 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
 
 public class Controller extends HttpServlet {
     BussinessService bs = new BussinessServiceImpl();
@@ -47,7 +47,7 @@ public class Controller extends HttpServlet {
     private void delMulti(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String[] ids = request.getParameterValues("ids");
         if (ids != null || ids.length > 0) {
-            for(String id : ids){
+            for (String id : ids) {
                 bs.deleteCustomer(Integer.parseInt(id));
             }
         }
@@ -61,7 +61,7 @@ public class Controller extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 
-    //修改用户信息
+    //保存修改过后的用户信息
     private void editCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         CustomerFormBean cfb = FillBeanUtil.fillBean(request, CustomerFormBean.class);
         //验证表单填写,如果不通过就回显
@@ -101,7 +101,7 @@ public class Controller extends HttpServlet {
 
     }
 
-    //修改用户信息
+    //显示要被修改的用户信息
     private void editUI(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String webid = request.getParameter("id");
         Integer id = Integer.parseInt(webid);
@@ -146,8 +146,11 @@ public class Controller extends HttpServlet {
 
     //显示所有用户信息
     private void showAllConsumers(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Customer> cos = bs.findAllCustomers();
-        request.setAttribute("co", cos);
+//        List<Customer> cos = bs.findAllCustomers();
+//        request.setAttribute("co", cos);
+        String num = request.getParameter("num");
+        Page page = bs.findPage(num);
+        request.setAttribute("page",page);
         request.getRequestDispatcher("/listCustomers.jsp").forward(request, response);
     }
 

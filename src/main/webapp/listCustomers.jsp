@@ -24,10 +24,10 @@
         </tr>
         <tr>
             <td>
-                <c:if test="${empty co}">
+                <c:if test="${empty page.records}">
                     没有客户信息
                 </c:if>
-                <c:if test="${!empty co}">
+                <c:if test="${!empty page.records}">
                     <table border="1" width="100%">
                         <tr>
                             <th>ID</th>
@@ -41,7 +41,7 @@
                             <th>描述</th>
                             <th>操作</th>
                         </tr>
-                        <c:forEach items="${co}" var="c">
+                        <c:forEach items="${page.records}" var="c">
                             <tr>
                                 <td><input type="checkbox" name="ids" value="${c.id}"></td>
                                 <td>${c.name}</td>
@@ -60,6 +60,11 @@
 
                         </c:forEach>
                     </table>
+                    第${page.currentPageNum}页/共${page.totalPages}页
+                    <a href="${pageContext.request.contextPath}/servlet/controller?op=showAllCustomers&num=1">首页</a>
+                    <a href="${pageContext.request.contextPath}/servlet/controller?op=showAllCustomers&num=${page.prePageNum}">上一页</a>
+                    <a href="${pageContext.request.contextPath}/servlet/controller?op=showAllCustomers&num=${page.nextPageNum}">下一页</a>
+                    <a href="${pageContext.request.contextPath}/servlet/controller?op=showAllCustomers&num=${page.totalPages}">尾页</a>
                 </c:if>
             </td>
         </tr>
@@ -76,18 +81,18 @@
     function delMulti() {
         var selected = false;
         var idsObj = document.getElementsByName("ids")
-        for(var i = 0;i<idsObj.length;i++){
-            if(idsObj[i].checked){
-                selected=true;
+        for (var i = 0; i < idsObj.length; i++) {
+            if (idsObj[i].checked) {
+                selected = true;
                 break;
             }
         }
-        if(!selected){
+        if (!selected) {
             alert("请选择要删除的记录");
             return;
-        }else{
+        } else {
             var flag = window.confirm("确定删除吗?");
-            if(flag){
+            if (flag) {
                 document.forms[0].submit();
             }
         }

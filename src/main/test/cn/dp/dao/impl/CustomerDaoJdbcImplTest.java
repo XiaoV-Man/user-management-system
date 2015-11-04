@@ -55,6 +55,9 @@ public class CustomerDaoJdbcImplTest {
 
     @Test
     public void testUpdate() throws Exception {
-        cdji.update(c);
+         List list=  cdji.findPageRecords(0, 10);
+        System.out.println(list);
     }
+
+
 }

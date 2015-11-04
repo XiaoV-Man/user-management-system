@@ -1,5 +1,6 @@
 package cn.dp.service;
 
+import cn.dp.common.Page;
 import cn.dp.domain.Customer;
 import cn.dp.exception.IdIsNullException;
 
@@ -28,6 +29,7 @@ public interface BussinessService {
      * 获得所有客户信息
      * @return  客户信息列表
      */
+    @Deprecated
     List<Customer> findAllCustomers();
 
     /**
@@ -36,4 +38,11 @@ public interface BussinessService {
      * @return
      */
     Customer findCustomerById(Integer id);
+
+    /**
+     * 根据用户要看的页码，查询封装了分页信息的Page对象
+     * @param num 如果为null或""，默认值是1
+     * @return
+     */
+    Page findPage(String num);
 }
