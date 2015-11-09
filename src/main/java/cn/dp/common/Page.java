@@ -2,6 +2,9 @@ package cn.dp.common;
 
 import java.util.List;
 
+/**
+ * 封装了分页有关信息
+ */
 public class Page {
     private int currentPageNum;//当前页码
     private int totalRecords;//总记录条数
@@ -15,8 +18,8 @@ public class Page {
     public Page(int totalRecords, int currentPageNum) {
         this.totalRecords = totalRecords;
         this.currentPageNum = currentPageNum;
-        totalPages = totalRecords % pageSize == 0 ? totalRecords / pageSize : totalRecords /pageSize + 1;
-        prePageNum = currentPageNum - 1 >0 ? currentPageNum - 1 : 1;
+        totalPages = totalRecords % pageSize == 0 ? totalRecords / pageSize : totalRecords / pageSize + 1;
+        prePageNum = currentPageNum - 1 > 0 ? currentPageNum - 1 : 1;
         nextPageNum = currentPageNum + 1 < totalPages ? currentPageNum + 1 : totalPages;
         startIndex = (currentPageNum - 1) * pageSize;
     }
