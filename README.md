@@ -4,10 +4,14 @@
 dbcpconfig.properties用来配置数据库相关的信息<br>
 daoconfig.properties用来配置DAO具体实现类<br>
 
-v1.1(目前的版本)<br>
+
+v1.1.5(目前的版本)<br>
+1.使用DBUtils替代DBAssist<br>
+
+v1.1<br>
 1.DAO与service解耦<br>
 2.使用DBCP作为数据源<br>
-3.重构DAO的实现类,优化数据访问层性能<br>
+3.重构DAO的实现类,使用自己写的JDBC框架(DBAssist)进行CURD操作,优化数据访问层性能<br>
 
 v1.0正式版<br>
 1.完成分页显示功能<br>
