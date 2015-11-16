@@ -1,8 +1,8 @@
 # user-management-system
-这是一个使用MVC架构设计的客户信息管理系统<br>
-可以用来查询数据库中的信息,在前端网页中显示<br>
-dbcpconfig.properties用来配置数据库相关的信息<br>
-daoconfig.properties用来配置DAO具体实现类<br>
+##这是一个使用MVC架构设计的客户信息管理系统<br>
+##可以用来查询数据库中的信息,在前端网页中显示<br>
+###dbcpconfig.properties用来配置数据库相关的信息<br>
+###daoconfig.properties用来配置DAO具体实现类<br>
 
 
 v1.1.5(目前的版本)<br>
